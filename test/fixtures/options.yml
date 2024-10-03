@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stock_price: 9.99
+  strike_price: 9.99
+  expiry_date: 2024-10-03
+  risk_free_rate: 9.99
+  volatility: 9.99
+  option_type: MyString
+
+two:
+  stock_price: 9.99
+  strike_price: 9.99
+  expiry_date: 2024-10-03
+  risk_free_rate: 9.99
+  volatility: 9.99
+  option_type: MyString

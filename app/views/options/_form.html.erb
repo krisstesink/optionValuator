@@ -1,0 +1,47 @@
+<%= form_with(model: option) do |form| %>
+  <% if option.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(option.errors.count, "error") %> prohibited this option from being saved:</h2>
+
+      <ul>
+        <% option.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :stock_price, style: "display: block" %>
+    <%= form.text_field :stock_price %>
+  </div>
+
+  <div>
+    <%= form.label :strike_price, style: "display: block" %>
+    <%= form.text_field :strike_price %>
+  </div>
+
+  <div>
+    <%= form.label :expiry_date, style: "display: block" %>
+    <%= form.date_field :expiry_date %>
+  </div>
+
+  <div>
+    <%= form.label :risk_free_rate, style: "display: block" %>
+    <%= form.text_field :risk_free_rate %>
+  </div>
+
+  <div>
+    <%= form.label :volatility, style: "display: block" %>
+    <%= form.text_field :volatility %>
+  </div>
+
+  <div>
+    <%= form.label :option_type, style: "display: block" %>
+    <%= form.text_field :option_type %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
